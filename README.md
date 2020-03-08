@@ -1,7 +1,3 @@
-# WOWs-Nations-web
-
-
-
 ## About WOWs Nations web
 
 This is Dicoding Submission Project for Class "Belajar Dasar Pemrograman Web", basically just converting my other submission to HTML page [WOWs-Nations](https://github.com/Darkerside/WOWs-Nations).
