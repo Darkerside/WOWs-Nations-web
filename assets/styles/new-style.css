@@ -201,6 +201,10 @@ hr {
   display: none;
 }
 
+.noright {
+  padding-inline-start : 20px;
+}
+
 .floatleft img {
   margin: 0em 1em 0em 0em;
 }
