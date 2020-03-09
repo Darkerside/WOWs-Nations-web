@@ -1,7 +1,26 @@
-//SWITCHING NATION INFO CODE START HERE
+//VARIABLE DECLARATION GOES HERE
+let name;
 let nation, x, i;
 let tree1, tree2, tree3, tree4;
 
+//ASK, STORE & RETRIEVE USER NAME FROM SESSION STORAGE
+if (typeof(Storage) !== "undefined") {
+    let yourname = sessionStorage.getItem("yourname");
+    if(yourname == null){
+        name = prompt("Please enter your name:", "User");
+        sessionStorage.setItem("yourname", name);
+    }
+
+    document.getElementById("yourname").innerHTML = sessionStorage.getItem("yourname");
+} else {
+    name = prompt("Please enter your name:", "User");
+    if (name == null || name == "") {
+        name = "User";
+    }
+    document.getElementById("yourname").innerHTML = name;
+}
+
+//SWITCHING NATION INFO CODE START HERE
 $('.flag').click(function () {
     $('.welcome').hide();
     $('[id*=info-]').hide();
@@ -165,7 +184,6 @@ function lclock() {
         document.getElementById('dc_hour').innerHTML = 'AM'; 
     }
 
-    //CALL THE FUNCTION EVERY 1 SECOND (UPDATE SECOND TIME).
     let time
     time = setInterval('lclock()', 1000);
 }

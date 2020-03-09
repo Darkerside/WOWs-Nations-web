@@ -318,15 +318,6 @@ hr {
   color: #FFF;
 }
 
-#js-table table, #js-table tbody {
-    text-align: left;
-    vertical-align: baseline;
-  }
-
-#js-table table th {
-    width: 40%;
-  }
-
 @media screen and (max-width: 1000px) {
   .profile img {
     width: 200px;
