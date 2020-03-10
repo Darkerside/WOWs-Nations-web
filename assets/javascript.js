@@ -1,11 +1,9 @@
 //VARIABLE DECLARATION GOES HERE
-let name;
-let nation, x, i;
-let tree1, tree2, tree3, tree4;
+let name, yourname, nation, x, i, tree1, tree2, tree3, tree4, dt, hrs, min, sec, time;
 
 //ASK, STORE & RETRIEVE USER NAME FROM SESSION STORAGE
 if (typeof(Storage) !== "undefined") {
-    let yourname = sessionStorage.getItem("yourname");
+    yourname = sessionStorage.getItem("yourname");
     if(yourname == null){
         name = prompt("Please enter your name:", "User");
         sessionStorage.setItem("yourname", name);
@@ -165,10 +163,10 @@ $('#tree4').click(function() {
 
 // LOCAL CLOCK SCRIPT STARTING HERE
 function lclock() {
-    let dt = new Date();
-    let hrs = dt.getHours();
-    let min = dt.getMinutes();
-    let sec = dt.getSeconds();
+    dt = new Date();
+    hrs = dt.getHours();
+    min = dt.getMinutes();
+    sec = dt.getSeconds();
 
     hrs = Clock(hrs);
     min = Clock(min);
@@ -184,7 +182,6 @@ function lclock() {
         document.getElementById('dc_hour').innerHTML = 'AM'; 
     }
 
-    let time
     time = setInterval('lclock()', 1000);
 }
 

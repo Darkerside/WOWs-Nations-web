@@ -6,7 +6,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
-  background: url(../image/bg.jpg) repeat;
+  background: url(../images/bg.jpg) repeat;
 }
 
 * {
@@ -23,7 +23,7 @@ nav {
   padding: 5px;
   top: 0;
   text-align: right;
-  background: url(../image/header.jpg);
+  background: url(../images/header.jpg);
   position: sticky;
 }
 
